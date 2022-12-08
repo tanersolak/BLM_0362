@@ -23,32 +23,34 @@ Naive Bayes Sınıflandırması Makine öğreniminde denetimli öğrenme alt sı
 # Naive Bayes Türleri
 
 **Gaussian Naive Bayes:** Eğer özelliklerimiz sürekli değer (continuous value) ise bu değerlerin bir gauss dağılımı veya diğer bir değişle normal dağılımdan örneklendiğini varsayarak işlem yapılır.
+  
 **Multinominal Naive Bayes:** Çok sınıflı kategorileri sınıflandırmak için kullanılır. Örneğin bir e-ticaret siteniz varsa pek çok kategoriniz bulunur. (Spor, kozmetik, giyim, petshop)
+  
 **Bernoulli Naive Bayes:** Multinominal Naive Bayes’e benzer şekilde sınıflandırma yapar. Ancak tahminler sadece ikili(boolean) şeklindedir. Evet/Hayır, Spam/Spam Değil, 1/0, Var/Yok gibi.
 
 # Naive Bayes’in Avantajları
 
-•	Her özellik birbirinden bağımsız kabul edildiği için   Logistic Regression gibi modellerden daha iyi performans gösterir.
-•	Basit ve kolay uygulanabilir.
-•	Az veriyle iyi işler başarabilir.
-•	Devamlı ve kesik veriler ile kullanılabilir.
-•	Yüksek boyutlu verilerde iyi çalışabilir.
-•	Hızlı olmasından dolayı gerçek zamanlı sistemlerde kullanılabilir.
-•	Alakasız özelliklerle ilişkiye girmemektedir.
+  •	Her özellik birbirinden bağımsız kabul edildiği için   Logistic Regression gibi modellerden daha iyi performans gösterir.
+  •	Basit ve kolay uygulanabilir.
+  •	Az veriyle iyi işler başarabilir.
+  •	Devamlı ve kesik veriler ile kullanılabilir.
+  •	Yüksek boyutlu verilerde iyi çalışabilir.
+  •	Hızlı olmasından dolayı gerçek zamanlı sistemlerde kullanılabilir.
+  •	Alakasız özelliklerle ilişkiye girmemektedir.
 
 # Naive Bayes’in Dezavantajları
 
-•	Değişkenler arası ilişkiler modellenemez çünkü özellikler birbirinden bağımsız varsayılarak işlemler yapılır.
-•	Gerçek hayatta her özellik bir noktada birbirine bağımlıdır.
-•	Zero Probability problemi ile karşı karşıya kalınabilir.
+  •	Değişkenler arası ilişkiler modellenemez çünkü özellikler birbirinden bağımsız varsayılarak işlemler yapılır.
+  •	Gerçek hayatta her özellik bir noktada birbirine bağımlıdır.
+  •	Zero Probability problemi ile karşı karşıya kalınabilir.
 
 # Naive Bayes’in Uygulama Alanları
 
-•	Gerçek Zamanlı Sistemler
-•	Çoklu Sınıflandırma Problemleri (Haber / E-Ticaret Kategorileri)
-•	Metin Sınıflandırma (Spam Filtreleme / Duygu Analizi)
-•	Hastalık Teşhisi
-•	Tavsiye Sistemleri (Recommendation System)
+  •	Gerçek Zamanlı Sistemler
+  •	Çoklu Sınıflandırma Problemleri (Haber / E-Ticaret Kategorileri)
+  •	Metin Sınıflandırma (Spam Filtreleme / Duygu Analizi)
+  •	Hastalık Teşhisi
+  •	Tavsiye Sistemleri (Recommendation System)
 
 # Naive Bayes Sınıflandırıcısı Örneği
 
@@ -62,19 +64,19 @@ X = (age = youth, income = medium, student = yes, credit = fair)
 
 i = 1, 2 için P(X|Ci)P(Ci)'yi maksimize etmemiz gerekiyor. P(Ci), her sınıfın a priori olasılığı, eğitim örneklerine dayalı olarak tahmin edilebilir:
   
-P(buy = yes) = 9/14 
-P(buy = no) = 5/14
+  P(buy = yes) = 9/14 
+  P(buy = no) = 5/14
 
 i = 1, 2 için P(X|Ci)'yi hesaplamak için aşağıdaki koşullu olasılıkları hesaplıyoruz:
   
-P(age = youth|buy = yes) = 2/9 
-P(age = youth|buy = no) = 3/5 
-P(income = medium|buy = yes) = 4/9
-P(income = medium|buy = no) = 2/5 
-P(student = yes|buy = yes) = 6/9
-P(student = yes|buy = no) = 1/5 
-P(credit = fair|buy = yes) = 6/9 
-P(credit = fair|buy = no) = 2/5
+  P(age = youth|buy = yes) = 2/9 
+  P(age = youth|buy = no) = 3/5 
+  P(income = medium|buy = yes) = 4/9
+  P(income = medium|buy = no) = 2/5 
+  P(student = yes|buy = yes) = 6/9
+  P(student = yes|buy = no) = 1/5 
+  P(credit = fair|buy = yes) = 6/9 
+  P(credit = fair|buy = no) = 2/5
 
 Yukarıdaki olasılıkları kullanarak; 
   
@@ -86,9 +88,9 @@ P(X|buy = no) = 3/5 x 2/5 x 1/5 x 2/5 = 0.019, olarak hesaplanır.
 
 P(X|Ci)P(Ci)'yi maksimize eden sınıfı bulmak için;
   
-P(X|buy = yes) x P(buy = yes) = 0.028
-P(X|buy = no) x P(buy = no) = 0.007
-0.028 > 0.007 olduğundan Naive Bayes Sınıflandırıcısı X örneği için evet tahmininde bulunur.
+  P(X|buy = yes) x P(buy = yes) = 0.028
+  P(X|buy = no) x P(buy = no) = 0.007
+  0.028 > 0.007 olduğundan Naive Bayes Sınıflandırıcısı X örneği için evet tahmininde bulunur.
 
 # Zero Probability Problemi Nedir?
   
@@ -99,10 +101,10 @@ Zero Probability istediğimiz örneğin veri setinde hiç bulunmaması durumudur
     
 Hem YES olasılığı, hem de NO olasılığına birer gözlem daha eklenir. Böylelikle önsel olasılık;
     
-𝑃(YES) = 3/7 → 3+1 / 7+2 = 4/9
-𝑃(NO) = 4/7 → 4+1 / 7+2 = 5/9
-Paydaya +2 eklenmesinin sebebi 1 YES olasılığı için, 1 de NO olasılığı için toplamda 2 gözlem eklenmesinden dolayıdır.
-Daha sonra ise her bir öznitelik(attribute) için de birer ekleme yapılır. Böylelikle sıfır olan bir olasılık kalmamış olur.
+  𝑃(YES) = 3/7 → 3+1 / 7+2 = 4/9
+  𝑃(NO) = 4/7 → 4+1 / 7+2 = 5/9
+  Paydaya +2 eklenmesinin sebebi 1 YES olasılığı için, 1 de NO olasılığı için toplamda 2 gözlem eklenmesinden dolayıdır.
+  Daha sonra ise her bir öznitelik(attribute) için de birer ekleme yapılır. Böylelikle sıfır olan bir olasılık kalmamış olur.
 
 # Kaynakça
 
