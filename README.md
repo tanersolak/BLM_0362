@@ -70,12 +70,19 @@ i = 1, 2 için P(X|Ci)P(Ci)'yi maksimize etmemiz gerekiyor. P(Ci), her sınıfı
 i = 1, 2 için P(X|Ci)'yi hesaplamak için aşağıdaki koşullu olasılıkları hesaplıyoruz:
   
   P(age = youth|buy = yes) = 2/9 
+  
   P(age = youth|buy = no) = 3/5 
+  
   P(income = medium|buy = yes) = 4/9
+  
   P(income = medium|buy = no) = 2/5 
+  
   P(student = yes|buy = yes) = 6/9
+  
   P(student = yes|buy = no) = 1/5 
+  
   P(credit = fair|buy = yes) = 6/9 
+  
   P(credit = fair|buy = no) = 2/5
 
 Yukarıdaki olasılıkları kullanarak; 
