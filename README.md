@@ -53,7 +53,7 @@ Naive Bayes Sınıflandırması Makine öğreniminde denetimli öğrenme alt sı
 
 <p align="center"><img src="Images/tablo.png">
 
-Veri örnekleri age (yaş), gelir (income), öğrenci (student) ve kredi (credit) özelliklerine göre tanımlanır. Sınıf etiketi özniteliği olan buy, kişinin bir bilgisayar satın alıp almadığını söyler, evet (sınıf C1) ve hayır (sınıf C2) olmak üzere iki farklı değeri vardır.
+Veri örnekleri yaş (age), gelir (income), öğrenci (student) ve kredi (credit) özelliklerine göre tanımlanır. Sınıf etiketi özniteliği olan buy, kişinin bir bilgisayar satın alıp almadığını söyler, evet (sınıf C1) ve hayır (sınıf C2) olmak üzere iki farklı değeri vardır.
 
 **Sınıflandırmak istediğimiz örnek:**
 X = (age = youth, income = medium, student = yes, credit = fair)
