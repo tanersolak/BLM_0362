@@ -57,13 +57,16 @@ Naive Bayes Sınıflandırması Makine öğreniminde denetimli öğrenme alt sı
 Veri örnekleri yaş (age), gelir (income), öğrenci (student) ve kredi (credit) özelliklerine göre tanımlanır. Sınıf etiketi özniteliği olan buy, kişinin bir bilgisayar satın alıp almadığını söyler, evet (sınıf C1) ve hayır (sınıf C2) olmak üzere iki farklı değeri vardır.
 
 **Sınıflandırmak istediğimiz örnek:**
+  
 X = (age = youth, income = medium, student = yes, credit = fair)
 
 i = 1, 2 için P(X|Ci)P(Ci)'yi maksimize etmemiz gerekiyor. P(Ci), her sınıfın a priori olasılığı, eğitim örneklerine dayalı olarak tahmin edilebilir:
+  
 P(buy = yes) = 9/14 
 P(buy = no) = 5/14
 
 i = 1, 2 için P(X|Ci)'yi hesaplamak için aşağıdaki koşullu olasılıkları hesaplıyoruz:
+  
 P(age = youth|buy = yes) = 2/9 
 P(age = youth|buy = no) = 3/5 
 P(income = medium|buy = yes) = 4/9
@@ -74,12 +77,15 @@ P(credit = fair|buy = yes) = 6/9
 P(credit = fair|buy = no) = 2/5
 
 Yukarıdaki olasılıkları kullanarak; 
+  
 P(X|buy = yes) = P(age = youth|buy = yes) x P(income = medium|buy = yes) x P(student = yes|buy = yes) x P(credit = fair|buy = yes) = 2/9 x 4/9 x 6/9 x 6/9 = 0.044
 
 Aynı durumlar için,
+  
 P(X|buy = no) = 3/5 x 2/5 x 1/5 x 2/5 = 0.019, olarak hesaplanır.
 
 P(X|Ci)P(Ci)'yi maksimize eden sınıfı bulmak için;
+  
 P(X|buy = yes) x P(buy = yes) = 0.028
 P(X|buy = no) x P(buy = no) = 0.007
 0.028 > 0.007 olduğundan Naive Bayes Sınıflandırıcısı X örneği için evet tahmininde bulunur.
@@ -92,6 +98,7 @@ Zero Probability istediğimiz örneğin veri setinde hiç bulunmaması durumudur
   <p align="center"><img src="Images/tablo2.png">
     
 Hem YES olasılığı, hem de NO olasılığına birer gözlem daha eklenir. Böylelikle önsel olasılık;
+    
 𝑃(YES) = 3/7 → 3+1 / 7+2 = 4/9
 𝑃(NO) = 4/7 → 4+1 / 7+2 = 5/9
 Paydaya +2 eklenmesinin sebebi 1 YES olasılığı için, 1 de NO olasılığı için toplamda 2 gözlem eklenmesinden dolayıdır.
