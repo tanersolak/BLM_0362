@@ -1,7 +1,6 @@
 # BLM_0362
 Naive Bayes Classification 
 
-https://youtu.be/ZODlN3IVZwo
 # Bayes Teoremi Nedir?
 
 Bayes teoremi, olasılık kuramı içinde incelenen önemli bir konudur. Bu teorem bir rassal değişken için olasılık dağılımı içinde koşullu olasılıklar ile marjinal olasılıklar arasındaki ilişkiyi gösterir. Bu şekli ile Bayes teoremi bütün istatistikçiler için kabul edilir bir ilişkiyi açıklar. Bu kavram için Bayes kuralı veya Bayes savı veya Bayes kanunu adları da kullanılır. Olasılık teorisinde, B ön koşullu A olayı için olasılık değeri, A ön koşullu B olayı için olasılık değerinden farklıdır. Ancak bu olasılık arasında belirli bir ilişki vardır ve bu ilişkiye, ilk açıklayan istatistikçi İngiliz Thomas Bayes'in adına atfen Bayes Teoremi denilmektedir.
