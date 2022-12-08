@@ -82,3 +82,16 @@ P(X|Ci)P(Ci)'yi maksimize eden sınıfı bulmak için;
 P(X|buy = yes) x P(buy = yes) = 0.028
 P(X|buy = no) x P(buy = no) = 0.007
 0.028 > 0.007 olduğundan Naive Bayes Sınıflandırıcısı X örneği için evet tahmininde bulunur.
+
+# Zero Probability Problemi Nedir?
+  
+Zero Probability istediğimiz örneğin veri setinde hiç bulunmaması durumudur. Yani herhangi bir işleme sokulduğunda sonucu 0 yapacaktır. Bunun için en basit yöntem tüm verilere minimum değer eklenerek (genellikle 1) bu olasılığı ortadan kaldırmaktır.
+  
+# Zero Probability Problemi Nasıl Çözülür?  
+  <p align="center"><img src="Images/tablo2.png">
+    
+Hem YES olasılığı, hem de NO olasılığına birer gözlem daha eklenir. Böylelikle önsel olasılık;
+𝑃(YES) = 3/7 → 3+1 / 7+2 = 4/9
+𝑃(NO) = 4/7 → 4+1 / 7+2 = 5/9
+Paydaya +2 eklenmesinin sebebi 1 YES olasılığı için, 1 de NO olasılığı için toplamda 2 gözlem eklenmesinden dolayıdır.
+Daha sonra ise her bir öznitelik(attribute) için de birer ekleme yapılır. Böylelikle sıfır olan bir olasılık kalmamış olur.
