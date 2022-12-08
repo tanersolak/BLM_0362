@@ -5,7 +5,7 @@ Naive Bayes Classification
 Bayes teoremi, olasılık kuramı içinde incelenen önemli bir konudur. Bu teorem bir rassal değişken için olasılık dağılımı içinde koşullu olasılıklar ile marjinal olasılıklar arasındaki ilişkiyi gösterir. Bu şekli ile Bayes teoremi bütün istatistikçiler için kabul edilir bir ilişkiyi açıklar. Bu kavram için Bayes kuralı veya Bayes savı veya Bayes kanunu adları da kullanılır. Olasılık teorisinde, B ön koşullu A olayı için olasılık değeri, A ön koşullu B olayı için olasılık değerinden farklıdır. Ancak bu olasılık arasında belirli bir ilişki vardır ve bu ilişkiye, ilk açıklayan istatistikçi İngiliz Thomas Bayes'in adına atfen Bayes Teoremi denilmektedir.
 Bayes teoremi aşağıdaki denklemle ifade edilir;
 
-<p align="center"><src="Images/formul.png">
+<p align="center"><img src="Images/formul.png">
 
 P(A|B); B olayı gerçekleştiği durumda A olayının meydana gelme olasılığıdır 
 P(B|A); A olayı gerçekleştiği durumda B olayının meydana gelme olasılığıdır 
@@ -51,7 +51,7 @@ Naive Bayes Sınıflandırması Makine öğreniminde denetimli öğrenme alt sı
 
 # Naive Bayes Sınıflandırıcısı Örneği
 
-<p align="center"><src="Images/tablo.png">
+<p align="center"><img src="Images/tablo.png">
 
 Veri örnekleri age (yaş), gelir (income), öğrenci (student) ve kredi (credit) özelliklerine göre tanımlanır. Sınıf etiketi özniteliği olan buy, kişinin bir bilgisayar satın alıp almadığını söyler, evet (sınıf C1) ve hayır (sınıf C2) olmak üzere iki farklı değeri vardır.
 
